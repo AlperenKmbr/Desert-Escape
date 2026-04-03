@@ -1,29 +1,27 @@
-# Oyun Genel Bakış 🎮
-Bu oyun, beceri gerektiren bir mücadele sunarak oyunculara eğlenceli bir deneyim sağlar. Farklı modlar ve makineler ile oyunculara çeşitli oyun mekanikleri sunuyor.
+# Desert Escape
 
-## Oyun Sistemleri 🛠️
-Oyun, farklı sistemler aracılığıyla işleyiş kazanır, oyunculara akıllı ve stratejik karar verme yeteneklerini geliştirme fırsatı sunar.
+## Game Overview
+Desert Escape is an immersive survival game set in a vast desert landscape where players must navigate challenges, gather resources, and fend off dangers to survive.
 
-## Oyun Mekanikler ⚙️
-Bu bölümde oyunun temel mekaniği açıklanacaktır:
+## Game Systems
+- **Player Control**: Players can move in four directions using the WASD keys and interact with objects using the E key.
+- **Mesh Generation**: The game uses procedural generation to create desert landscapes, ensuring a unique experience each time.
+- **Health/Damage**: Players have a health meter that decreases upon taking damage from obstacles or falling objects. Health can be restored by finding hidden items.
+- **Score**: Players earn points by collecting resources and completing challenges. High scores can be submitted to an online leaderboard.
+- **Pause**: The game can be paused at any time using the ESC key, allowing players to take breaks without losing progress.
+- **Music**: An adaptive soundtrack plays based on the player’s actions and environment, enhancing immersion.
+- **Camera**: The camera follows the player smoothly, providing an optimal view of the surroundings while maintaining gameplay fluidity.
 
-### Obstacle Mode 🚧
-Sinüzoidal pürüzlü duvarlar ile dolu bu mod, oyuncuların engelleri aşabilmesi için zeka ve hız gerektiren bir ortam sunar.
+## Game Mechanics
+- **Obstacle Mode**: Features walls that occupy 50% of the width, challenging players to time their movements.
+- **Snake Mode**: A fast-paced mode with walls that occupy 25% of the width, creating extreme narrowing situations.
+- **Falling Objects**: Objects fall from above, occupying 85% of the width, requiring players to dodge or avoid them to survive.
 
-### Snake Mode 🐍
-Aşırı daralma ile oyuncuların daha dikkatli ve hızlı hareket etmeleri gerekir. Bu mod, heyecan ve zorluk sunar.
+## Architecture Details
+The game is built using Unity 2022.3+, leveraging its advanced rendering capabilities and physics engine for a realistic experience. The architecture follows a modular design, allowing for easy updates and feature expansions.
 
-### Falling Objects 🌪️
-Geniş koridor içinde düşen kayalar, oyuncuları sürekli olarak uyanık ve dikkatli olmaya zorlar. Hızlı tepkiler gerektiren bir deneyim sunar.
+## Development Details
+Desert Escape was developed by AlperenKmbr as a personal project, with the aim of exploring game development using Unity. The project utilizes C# for scripting and focuses on optimization for both performance and gameplay.
 
-## Mimari 🏗️
-Oyun mimarisi, performans ve kullanılabilirlik açısından optimize edilmiştir.
-
-## Geliştirme Detayları 🧑‍💻
-Geliştirme süreci boyunca dikkate alınan önemli faktörler ve oyuncu geri bildirimleri doğrultusunda yapılan iyileştirmeler hakkında bilgiler.
-
-## Kullanım 📚
-Oyun nasıl oynanır, kontroller ve beceri geliştirme ipuçları bu bölümde yer alacaktır.
-
-## Lisans 📜
-Bu oyun, belirli bir lisans altında paylaşımlıdır; lisans hakkında daha fazla bilgiye buradan ulaşabilirsiniz.
+## Usage Instructions
+To play Desert Escape, download the latest build from the releases section on GitHub. Ensure you have Unity installed for debugging or modifications. Follow the in-game tutorials to get started.
