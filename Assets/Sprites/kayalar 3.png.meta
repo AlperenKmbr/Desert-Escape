@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: c8092f63376496c4182b8a548af2e3b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1252246276914928604
+    second: kayalar 3_0
+  - first:
+      213: 1910121961204344222
+    second: kayalar 3_1
+  - first:
+      213: 1395741617332856449
+    second: kayalar 3_2
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kayalar 3_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1008
+        width: 676
+        height: 650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 290, y: -165}
+        - {x: 335, y: -49}
+        - {x: 333, y: -50}
+        - {x: 338, y: -31}
+        - {x: 332, y: -31}
+        - {x: 335, y: 9.5}
+        - {x: 336, y: 8}
+        - {x: 338, y: 9}
+        - {x: 338, y: 12}
+        - {x: 336, y: 13}
+        - {x: 327, y: 9}
+        - {x: 250, y: 220}
+        - {x: 165, y: 276}
+        - {x: 69, y: 325}
+        - {x: -193, y: 274}
+        - {x: -255, y: 156}
+        - {x: -338, y: -15.758911}
+        - {x: -292, y: -136}
+        - {x: -247, y: -234}
+        - {x: 12.430725, y: -325}
+        - {x: 189, y: -236}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4242e2555a02f9ee0800000000000000
+      internalID: -1252246276914928604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kayalar 3_1
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1031
+        width: 574
+        height: 563
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 287, y: -70.5}
+        - {x: 250, y: 88.5}
+        - {x: 193, y: 205.5}
+        - {x: 131, y: 259.5}
+        - {x: -47, y: 281.5}
+        - {x: -144, y: 185.5}
+        - {x: -256, y: 104.5}
+        - {x: -287, y: -90.29224}
+        - {x: -225, y: -196.5}
+        - {x: -38, y: -281.5}
+        - {x: 139, y: -250.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95e14fadcd128a10800000000000000
+      internalID: 1910121961204344222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kayalar 3_2
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 1046
+        width: 533
+        height: 572
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 159.5, y: -236}
+        - {x: 227.5, y: -122}
+        - {x: 263.5, y: -74}
+        - {x: 264.5, y: -75}
+        - {x: 266.5, y: -74}
+        - {x: 266.5, y: -66}
+        - {x: 265.5, y: -65}
+        - {x: 263.5, y: -65.66667}
+        - {x: 232.5, y: 54}
+        - {x: 176.5, y: 241}
+        - {x: 101.883514, y: 283.84946}
+        - {x: 109.5, y: 274}
+        - {x: 97.933334, y: 285}
+        - {x: 94.5, y: 286}
+        - {x: 22.5, y: 283}
+        - {x: -92.5, y: 185}
+        - {x: -245.5, y: 83}
+        - {x: -260.5, y: 0}
+        - {x: -266.5, y: -56}
+        - {x: -164.5, y: -264}
+        - {x: -66.5, y: -286}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 186aa532b9bae5310800000000000000
+      internalID: 1395741617332856449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b9747d35d34d7d74d8e1bb84c369b352
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      kayalar 3_0: -1252246276914928604
+      kayalar 3_1: 1910121961204344222
+      kayalar 3_2: 1395741617332856449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
