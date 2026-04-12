@@ -1,4 +1,4 @@
-# 🌵 Desert Escape: Procedural Survival
+#  Desert Escape: Procedural Survival
 ### Prosedürel Mesh Üretimi ve Dinamik Zorluk Tabanlı Hayatta Kalma Oyunu
 
 ![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B-blue?logo=unity)
