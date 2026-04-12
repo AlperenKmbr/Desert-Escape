@@ -1,27 +1,56 @@
-# Desert Escape
+# 🌵 Desert Escape: Procedural Survival
+### Prosedürel Mesh Üretimi ve Dinamik Zorluk Tabanlı Hayatta Kalma Oyunu
 
-## Game Overview
-Desert Escape is an immersive survival game set in a vast desert landscape where players must navigate challenges, gather resources, and fend off dangers to survive.
+![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B-blue?logo=unity)
+![Language](https://img.shields.io/badge/Language-C%23-green?logo=c-sharp)
+![Architecture](https://img.shields.io/badge/Architecture-Modular_State_Machine-orange)
 
-## Game Systems
-- **Player Control**: Players can move in four directions using the WASD keys and interact with objects using the E key.
-- **Mesh Generation**: The game uses procedural generation to create desert landscapes, ensuring a unique experience each time.
-- **Health/Damage**: Players have a health meter that decreases upon taking damage from obstacles or falling objects. Health can be restored by finding hidden items.
-- **Score**: Players earn points by collecting resources and completing challenges. High scores can be submitted to an online leaderboard.
-- **Pause**: The game can be paused at any time using the ESC key, allowing players to take breaks without losing progress.
-- **Music**: An adaptive soundtrack plays based on the player’s actions and environment, enhancing immersion.
-- **Camera**: The camera follows the player smoothly, providing an optimal view of the surroundings while maintaining gameplay fluidity.
+**Desert Escape**, oyuncunun reflekslerini ve hayatta kalma becerilerini test eden; organik mağara yapılarını matematiksel olarak üreten (Perlin Noise) ve dinamik bir zorluk eğrisine sahip 2D survival oyunudur.
 
-## Game Mechanics
-- **Obstacle Mode**: Features walls that occupy 50% of the width, challenging players to time their movements.
-- **Snake Mode**: A fast-paced mode with walls that occupy 25% of the width, creating extreme narrowing situations.
-- **Falling Objects**: Objects fall from above, occupying 85% of the width, requiring players to dodge or avoid them to survive.
+---
 
-## Architecture Details
-The game is built using Unity 2022.3+, leveraging its advanced rendering capabilities and physics engine for a realistic experience. The architecture follows a modular design, allowing for easy updates and feature expansions.
+## ⚙️ Teknik Sistem Analizi ve Mantık (Core Systems)
 
-## Development Details
-Desert Escape was developed by AlperenKmbr as a personal project, with the aim of exploring game development using Unity. The project utilizes C# for scripting and focuses on optimization for both performance and gameplay.
+### ⛰️ Prosedürel Dünya Üretimi (Mesh Generation)
+Oyunun "beyni" olan `MeshWallManager`, dünyayı statik objelerle değil, çalışma zamanında (Runtime) oluşturulan **Dynamic Mesh** yapılarıyla kurgular.
+* **Perlin Noise Mantığı:** Duvarların "organik" ve pürüzlü görünmesi için Perlin Noise fonksiyonu kullanılmıştır.
+* **Esnemeyen Kaplamalar (World-Space UV):** Duvarlar aşağı kayarken dokuların (textures) esnememesi için UV haritaları objenin koordinatlarına göre anlık hesaplanır.
+* **Dinamik Collider :** Mesh değiştikçe `PolygonCollider2D` verileri her karede güncellenerek fiziksel doğruluğu sağlar.
 
-## Usage Instructions
-To play Desert Escape, download the latest build from the releases section on GitHub. Ensure you have Unity installed for debugging or modifications. Follow the in-game tutorials to get started.
+### 🌌 Parallax ve Arka Plan Yönetimi
+Oyun atmosferini güçlendirmek amacıyla optimize edilmiş bir arka plan sistemi kullanılmıştır.
+* **UV Offset Kaydırma:** `BackgroundLoop` sistemi, `SetTextureOffset` metodunu kullanarak arka plan dokusunu (texture) matematiksel bir döngüye sokar.
+* **Sonsuz Derinlik Algısı:** Zaman bazlı (Time.deltaTime) koordinat kaydırma yöntemiyle, minimum bellek tüketimiyle sonsuz bir hareket ve derinlik hissi (Parallax Effect) oluşturulur.
+
+### 🎮 Fizik Tabanlı Karakter Kontrolü
+Karakter hareketi, basit bir pozisyon değişikliğinden ötesine geçerek fizik motoruyla entegre çalışır.
+* **Rigidbody2D MovePosition:** Karakterin duvarların içinden geçmesini engelleyen, engellere çarptığında durmasını sağlayan fizik tabanlı bir hareket sistemi kullanılmıştır.
+* **Görsel Geri Bildirim (Tilt):** Karakter sağa sola hareket ederken hareket hızına bağlı olarak görsel bir eğim (tilt) efekti kazanır.
+
+---
+
+## 🕹️ Oyun Modları ve Algoritmik Akış
+Sistem, `GameStage` enum yapısı ile üç farklı fazı yönetir:
+
+1.  **🧱 Obstacle Mode:** Orta genişlikte, pürüzlü ve "Spike" (sivri uç) içeren organik duvar yapısı.
+2.  **🐍 Snake Mode:** Çok dar bir koridorda yüksek hız ve hassasiyet gerektiren kıvrımlı yol yapısı.
+3.  **☄️ Falling Objects Mode:** Duvarların genişlediği ve yukarıdan rastgele boyutlarda objelerin yağdığı kaos modu. Bu modda spawner, mod aktifleşene kadar `WaitUntil` ile uyku modunda kalır.
+
+---
+
+## 🛠️ Mimari Özellikler
+
+* **Singleton & Persistence:** Menü müziği ve arka plan, `DontDestroyOnLoad` ile sahneler arası korunurken, oyun sahnesine girişte kendilerini otomatik imha ederler.
+* **Bellek Yönetimi (Memory Management):** Ekrandan çıkan tüm platformlar ve düşen nesneler belli bir koordinatın altına indiklerinde `Destroy` edilerek bellek şişmesi önlenir.
+* **Kalıcı Ayarlar (PlayerPrefs):** Hassasiyet ve ses seviyeleri `PlayerPrefs` ile kaydedilir ve sahne geçişlerinde anında uygulanır.
+
+---
+
+## 📋 Veri ve Skor Mantığı
+* **Time-Based Score:** Skor, `Time.deltaTime` üzerinden saniye bazlı hesaplanır ve UI güncellemeleri performansı korumak adına `UpdateScoreUI` içinde tamsayıya yuvarlanarak (Mathf.FloorToInt) yansıtılır.
+* **Hasar & Ölümsüzlük:** Karakter hasar aldığında `ImmunityRoutine` (Coroutines) devreye girer ve oyuncuya 2 saniyelik geçici bir ölümsüzlük kalkanı tanır.
+
+---
+
+**Geliştirici:** [Alperen Kamber](https://github.com/AlperenKmbr)  
+**Teknoloji:** Unity 2022.3+, C#, 2D Physics, Procedural Geometry
