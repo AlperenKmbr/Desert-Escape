@@ -49,7 +49,36 @@ Sistem, `GameStage` enum yapısı ile üç farklı fazı yönetir:
 ## 📋 Veri ve Skor Mantığı
 * **Time-Based Score:** Skor, `Time.deltaTime` üzerinden saniye bazlı hesaplanır ve UI güncellemeleri performansı korumak adına `UpdateScoreUI` içinde tamsayıya yuvarlanarak (Mathf.FloorToInt) yansıtılır.
 * **Hasar & Ölümsüzlük:** Karakter hasar aldığında `ImmunityRoutine` (Coroutines) devreye girer ve oyuncuya 2 saniyelik geçici bir ölümsüzlük kalkanı tanır.
+ 
+## 🖼️ Oyun Galerisi 
 
+
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px;">
+    <img src="https://github.com/user-attachments/assets/7bb9d02a-d24d-4328-9bfa-6c0133bd358e" width="220" alt="Karakter Etkileşimi" style="margin: 5px;" />
+    <img src="https://github.com/user-attachments/assets/b2770676-2e71-4cb3-bb92-9a9ea706fbc6" width="220" alt="Unity Editor Geliştirme Ortamı" style="margin: 5px;" />
+    <img src="https://github.com/user-attachments/assets/6b479aee-2240-42e0-a693-e2a234ecd0bb" width="220" alt="Çöl Atmosferi Uzak Çekim" style="margin: 5px;" />
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px;">
+    <img src="https://github.com/user-attachments/assets/b3e9e8dd-c3db-4b0f-b26f-a8074186c0bc" width="220" alt="Yapılandırma ve Mekanik Ayarlar" style="margin: 5px;" />
+    <img src="https://github.com/user-attachments/assets/1a5f93f5-a981-44c6-848f-4bc825ccfd26" width="220" alt="Low-Poly Karakter Modeli" style="margin: 5px;" />
+    <img src="https://github.com/user-attachments/assets/9e28e7c3-bb99-4ee4-af94-0902a47330fb" width="220" alt="Proje Hiyerarşisi ve Düzen" style="margin: 5px;" />
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+    <img src="https://github.com/user-attachments/assets/3c924c3a-80ea-4cc7-8bdd-e1bd4391fe29" width="460" alt="Geniş Açılı Ekosistem Görünümü" />
+</div>
+
+<p style="text-align: center; font-style: italic;">
+*Low-poly görsel stil, dinamik gökyüzü ve optimize edilmiş proje yapısı.*
+</p>
+
+
+
+
+**Geliştirici:** [Alperen Kamber](https://github.com/AlperenKmbr)  
+**Eğitim Kaynağı:** Udemy - Unity 2D Course
 ---
 
 **Geliştirici:** [Alperen Kamber](https://github.com/AlperenKmbr)  
