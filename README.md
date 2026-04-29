@@ -14,7 +14,6 @@
 ### ⛰️ Prosedürel Dünya Üretimi (Mesh Generation)
 Oyunun "beyni" olan `MeshWallManager`, dünyayı statik objelerle değil, çalışma zamanında (Runtime) oluşturulan **Dynamic Mesh** yapılarıyla kurgular.
 * **Perlin Noise Mantığı:** Duvarların "organik" ve pürüzlü görünmesi için Perlin Noise fonksiyonu kullanılmıştır.
-* **Esnemeyen Kaplamalar (World-Space UV):** Duvarlar aşağı kayarken dokuların (textures) esnememesi için UV haritaları objenin koordinatlarına göre anlık hesaplanır.
 * **Dinamik Collider :** Mesh değiştikçe `PolygonCollider2D` verileri her karede güncellenerek fiziksel doğruluğu sağlar.
 
 ### 🌌 Parallax ve Arka Plan Yönetimi
@@ -71,7 +70,7 @@ Sistem, `GameStage` enum yapısı ile üç farklı fazı yönetir:
 </div>
 
 <p style="text-align: center; font-style: italic;">
-*Low-poly görsel stil, dinamik gökyüzü ve optimize edilmiş proje yapısı.*
+
 </p>
 
 
